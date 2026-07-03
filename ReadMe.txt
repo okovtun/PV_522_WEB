@@ -5,4 +5,7 @@ Special characters:
 https://htmlbook.ru/samhtml/tekst/spetssimvoly
 
 TODO:
+1. Рассмотреть отношения между CSS-селекторами;
+
+DONE:
 1. Залить репозиторий на GitHub;
