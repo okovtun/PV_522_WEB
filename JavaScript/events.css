@@ -91,6 +91,11 @@ body
 	font-size: 22px;
 }
 
+#debug
+{
+	font-size:22px;
+}
+
 #display
 {
 	display:flex;
@@ -107,13 +112,18 @@ body
 }
 .time-unit
 {
-	font-size:48px;
+	font-family:'Digital-7 Mono';
+	font-size:68px;
 	color:rgb(200,0,0);
 	background-color:Highlight;
 	height:148px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
 }
 .time-marker
 {
+	font-size:22px;
 	border:solid 1px;
 	background-color: darkred;
 	color:aliceblue;

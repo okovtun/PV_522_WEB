@@ -5,6 +5,10 @@ Special characters:
 https://htmlbook.ru/samhtml/tekst/spetssimvoly
 
 TODO:
+1. ѕочитать про Timestamp:	https://en.wikipedia.org/wiki/Timestamp	;
+2. **ѕомен€ть местами переменные 'timestamp' и 'duration';
+
+DONE:
 1. ѕользователь должен иметь возможность выбирать интервал времени, за который происходит transition;
 2. ѕрикрутить логику к калькул€тору;
 
