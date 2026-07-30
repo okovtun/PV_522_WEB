@@ -84,3 +84,37 @@ function tick_timer()
 
 	setTimeout(tick_timer, 100);	//Функция setTimeout() вызывает другую функцию через указанный промежуток времени (10ms);
 }
+
+document.getElementById("btn-start").addEventListener("click", startCountdownTimer);
+function startCountdownTimer()
+{
+	let targetDateControl = document.getElementById("target-date");
+	let targetTimeControl = document.getElementById("target-time");
+	let btnStart = document.getElementById("btn-start");
+	if (btnStart.value === "Start")
+	{
+		btnStart.value = "Stop";
+		targetDateControl.disabled = targetTimeControl.disabled = true;
+		tickCountdown();
+	}
+	else
+	{
+		btnStart.value = "Start";
+		targetDateControl.disabled = targetTimeControl.disabled = false;
+	}
+}
+function tickCountdown()
+{
+	let now = new Date();
+
+	let targetDate = document.getElementById("target-date").valueAsDate;
+	let targetTime = document.getElementById("target-time").valueAsDate;
+
+	//Выравниваем часовой пояс:
+	targetDate.setHours(targetDate.getHours() + targetDate.getTimezoneOffset() / 60);
+	targetTime.setHours(targetTime.getHours() + targetTime.getTimezoneOffset() / 60);
+
+	document.getElementById("target-date-value").innerHTML = targetDate;
+	document.getElementById("target-time-value").innerHTML = targetTime;
+	document.getElementById("timezone").innerHTML = targetTime.getTimezoneOffset();
+}
