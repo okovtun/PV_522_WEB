@@ -5,8 +5,10 @@ Special characters:
 https://htmlbook.ru/samhtml/tekst/spetssimvoly
 
 TODO:
+1. При достижении Timepoint должна играть Музыка;
+
+DONE:
 1. Почитать про Timestamp:	https://en.wikipedia.org/wiki/Timestamp	;
-2. **Поменять местами переменные 'timestamp' и 'duration';
 
 DONE:
 1. Пользователь должен иметь возможность выбирать интервал времени, за который происходит transition;
